@@ -1,0 +1,46 @@
+{
+	"info": {
+		"name": "products",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Product",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"name\": \"Keyboard\",\n  \"price\": 59.99\n}"
+				},
+				"url": "{{base_url}}/products"
+			}
+		},
+		{
+			"name": "Get All Products",
+			"request": {
+				"method": "GET",
+				"url": "{{base_url}}/products"
+			}
+		},
+		{
+			"name": "Get Product By ID",
+			"request": {
+				"method": "GET",
+				"url": "{{base_url}}/products/1"
+			}
+		},
+		{
+			"name": "Delete Product By ID",
+			"request": {
+				"method": "DELETE",
+				"url": "{{base_url}}/products/1"
+			}
+		}
+	]
+}
