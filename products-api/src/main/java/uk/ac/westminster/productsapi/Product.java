@@ -1,18 +1,15 @@
 package uk.ac.westminster.productsapi;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-
-@Getter
-@Setter
-@NoArgsConstructor
-@AllArgsConstructor
 public class Product {
 
-	private Long id;
-	private String name;
-	private Double price;
+	public Long id;
+	public String name;
+	public double price;
+
+	public Product(Long id, String name, double price) {
+		this.id = id;
+		this.name = name;
+		this.price = price;
+	}
 
 }
